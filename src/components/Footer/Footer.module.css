@@ -1,0 +1,135 @@
+/* Footer */
+footer {
+  background: #111;
+  height: auto;
+  padding-top: 40px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.footer__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer__title {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer__content {
+  max-width: 700px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+/* Form */
+.footer__form {
+  margin-top: 15px;
+}
+
+.footer__form__input {
+  width: 450px;
+  max-width: 700px;
+  background: none;
+  border: 1px solid #e9204f;
+  color: #f1f1f1;
+  padding: 15px;
+  font-size: 19px;
+  letter-spacing: 1.9px;
+  outline: none;
+}
+
+.footer__form__input::-webkit-input-placeholder {
+  letter-spacing: 1.1px;
+  color: #ccc;
+}
+
+.footer__form__input::-moz-placeholder {
+  letter-spacing: 1.1px;
+  color: #ccc;
+}
+
+.footer__form__input:-ms-input-placeholder {
+  letter-spacing: 1.1px;
+  color: #ccc;
+}
+
+.footer__form__input::-ms-input-placeholder {
+  letter-spacing: 1.1px;
+  color: #ccc;
+}
+
+.footer__form__input::placeholder {
+  letter-spacing: 1.1px;
+  color: #ccc;
+}
+
+/* Button */
+.footer__form__btn {
+  padding: 16px 23px;
+  margin-left: 10px;
+  cursor: pointer;
+  background: #e9204f;
+  border: none;
+  font-size: 18px;
+  color: #f1f1f1;
+}
+
+/* footer bottom */
+.footer__bottom {
+  background: #000;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer__bottom__list li {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+/* link */
+.footer__bottom__link {
+  color: rgba(136, 136, 136, 0.71);
+}
+
+.footer__bottom__link:hover {
+  text-decoration: none;
+}
+
+/* media */
+
+@media (max-width: 595px) {
+  .footer__form__btn {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 451px) {
+  .footer__form__input {
+    width: 350px;
+  }
+}
+
+@media (max-width: 405px) {
+  .footer__title {
+    text-align: center;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 351px) {
+  .footer__form__input {
+    width: 250px;
+  }
+}

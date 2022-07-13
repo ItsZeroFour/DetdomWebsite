@@ -1,0 +1,141 @@
+/* Search */
+.search__content {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+  margin-top: 25px;
+}
+
+/* input */
+.search__input {
+  width: 300px;
+  outline: none;
+  color: var(--theme-color);
+  margin-top: 20px;
+}
+
+.search__data .search__input {
+  background: none;
+  border: none;
+  font-size: 19px;
+  border-bottom: 2px solid var(--theme-color);
+}
+
+.search__input:focus ~ label,
+.search__input:valid ~ label {
+  transform: translateY(-28px);
+  font-size: 16px;
+  color: #4158d0;
+}
+
+/* Search data */
+.search__data {
+  position: relative;
+}
+
+.search__data label {
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  color: var(--theme-color);
+  font-size: 19px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* underline */
+.underline {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+
+.underline::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #4158d0;
+  transform: scale(0);
+  transition: transform 0.3s ease;
+}
+
+.search__input:focus ~ .underline::before,
+.search__input:valid ~ .underline::before {
+  transform: scale(1);
+}
+
+/* list */
+.list__container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.list__item {
+  width: 290px;
+  margin: 20px;
+  border-radius: 7px;
+  background: var(--theme-card);
+  cursor: pointer;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
+  transition: background 0.2s linear;
+}
+
+.list__item:hover {
+  background: var(--theme-card-hover);
+}
+
+.list__item a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.list__img {
+  width: 100%;
+  height: 265px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 7px 7px 0 0;
+}
+
+.list__name {
+  color: var(--theme-card-color);
+  text-decoration: none;
+  transition: text-decoration 0.2s linear;
+  padding: 13px 0;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: letter-spacing 0.2s;
+}
+
+.list__name:hover {
+  letter-spacing: 1.6px;
+}
+
+/* media */
+@media (max-width: 659px) {
+  .search__content {
+    justify-content: center;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 369px) {
+  .search__input {
+    width: 250px;
+  }
+}
+
+@media (max-width: 269px) {
+  .search__input {
+    width: 200px;
+  }
+}

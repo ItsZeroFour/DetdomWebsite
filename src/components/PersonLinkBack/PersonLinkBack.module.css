@@ -1,0 +1,25 @@
+.back {
+  color: #fff;
+  font-size: 19px;
+  background: var(--theme-person-btn);
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  line-height: 1.2em;
+}
+
+.back span {
+  margin-right: 5px;
+  transition: margin-right 0.2s;
+}
+
+.back:hover span {
+  margin-right: 10px;
+}
+
+@media (max-width: 368px) {
+  .back {
+    font-size: 15px;
+    line-height: 5em;
+  }
+}
