@@ -215,18 +215,6 @@ const detdomMembers = {
       img: "https://sun9-west.userapi.com/sun9-37/s/v1/ig2/y2gON-Dx50lIs4TI1fTC_nZGFRaqkk9-NL1eNGs0PmwpyVt6YCHtFkFschdOy_8Lc1nJIlyhVpgEGmFQtLZhh3Il.jpg?size=1280x861&quality=95&type=album",
       id: 17,
     },
-
-    {
-      name: "Серожа",
-      age: 16,
-      height: 179,
-      role: "Участ.",
-      gender: "Дотер",
-      birthyear: "1 сен",
-      description: "Играл в доту против zxcAlenka",
-      img: "https://avatars.mds.yandex.net/get-images-cbir/1356362/icrHwCs7jKJ2mLyRVl0xnQ4978/ocr",
-      id: 18,
-    },
   ],
 };
 
